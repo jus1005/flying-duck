@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="K{kNy7jsrb@(*k6SmIfD">Player</variable><variable type="KIND_SpriteKind" id="4nzv)G[+8YJ#HH.,od@x">Projectile</variable><variable type="KIND_SpriteKind" id="r`|Lzp{%mVggzWf+@4IN">Food</variable><variable type="KIND_SpriteKind" id="vQccQ?rd-@S`YZ*7O?KC">Enemy</variable><variable id="qxpEieM8qslk;KeH[w,c">Duck</variable><variable id="B:U:Ii0UbwH!~8r}%GnK">mySprite</variable></variables><block type="pxt-on-start" id="~~;JZP|q!bEcE~]o(kTu" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="YeDDQ!^BxN/{`V=o]UH_"><value name="color"><shadow type="colorindexpicker" id="H^f,}@X9HINUnL}27reT"><field name="index">9</field></shadow></value><next><block type="particlesStartScreenAnimation" id="$r9+_a,l87Hs3)W[?)y_"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.clouds</field><next><block type="variables_set" id="x/%j0J#VGR/jlo%Q7}_-"><field name="VAR" id="qxpEieM8qslk;KeH[w,c">Duck</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="fOB0j2s_vS|?c0tRi)KZ"><value name="img"><shadow type="screen_image_picker" id="M6R*Yi`v8=V(|{~u8q[c"><field name="img">img`
+. . . . . . . . . . b 5 b . . . 
+. . . . . . . . . b 5 b . . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. . . . b b 5 d 1 f 5 d 4 c . . 
+. . . . b 5 5 1 f f d d 4 4 4 b 
+. . . . b 5 5 d f b 4 4 4 4 b . 
+. . . b d 5 5 5 5 4 4 4 4 b . . 
+. . b d d 5 5 5 5 5 5 5 5 b . . 
+. b d d d d 5 5 5 5 5 5 5 5 b . 
+b d d d b b b 5 5 5 5 5 5 5 b . 
+c d d b 5 5 d c 5 5 5 5 5 5 b . 
+c b b d 5 d c d 5 5 5 5 5 5 b . 
+. b 5 5 b c d d 5 5 5 5 5 d b . 
+b b c c c d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="%GzoB}?L(|E@p#,#de+%"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="Sprite_blockCombine_set" id="WB6}johi/}o]E`clozKq"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="3,onO]}6s%ItX/d3+w-L"><field name="VAR" id="qxpEieM8qslk;KeH[w,c">Duck</field></block></value><value name="value"><shadow type="math_number" id="P8k+iPA7z0Tsn`A}}J;Q"><field name="NUM">100</field></shadow></value><next><block type="spritesetsetflag" id="I=fc=Ig5x*7hnt[1G2cB"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get" id="@FnxZc#CK3tasvnUA*r;"><field name="VAR" id="qxpEieM8qslk;KeH[w,c">Duck</field></block></value><value name="on"><shadow type="toggleOnOff" id="5sL1csCtL2+;[5Z%nTx:"><field name="on">true</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="^vO#V87E/ipbRY^1Xt1?" x="10" y="350"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="Sprite_blockCombine_change" id="6yX,qx,0r(wVOG471NE%"><field name="property">Sprite.vy@set</field><value name="mySprite"><block type="variables_get" id="wD-.dd:;Vp:P?TaTuEf%"><field name="VAR" id="qxpEieM8qslk;KeH[w,c">Duck</field></block></value><value name="value"><shadow type="math_number" id="3^W[lzb]KZmuakpi!Rso"><field name="NUM">-70</field></shadow></value></block></statement></block></xml>
